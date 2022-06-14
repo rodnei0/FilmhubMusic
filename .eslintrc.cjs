@@ -11,7 +11,7 @@ module.exports = {
 		"ecmaFeatures": {
 			"jsx": true
 		},
-		"ecmaVersion": 6,
+		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
 	"plugins": [
@@ -34,9 +34,11 @@ module.exports = {
 			"error",
 			"always"
 		],
+		"no-unused-vars": "off",
 	},
 	"globals": {
-		"React": "writable",
+		"React": "writable", 
+		"process": "writable", 
 	},
 	"settings": {
 		"react": {
