@@ -29,19 +29,6 @@ export default function Home() {
 
 	console.log(genres);
 
-	// let hashTable = {};
-
-	// for (const album of albums) {
-	//     const key = album.genres[0].name;
-	//     if (hashTable[key] !== undefined) {
-	//         hashTable[key] = [...hashTable[key], album];
-	//         continue;
-	//     }
-	//     hashTable[key] = [album];
-	// }
-
-	// return { ...hashTable };
-
 	return (
 		<Container>
 			{/* {albums.map((album, index) => {
