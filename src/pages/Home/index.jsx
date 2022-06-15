@@ -4,6 +4,7 @@ import api from "../../services/api";
 import { organizeByGenre } from "../../utils/albumsUtils";
 import Genres from "../../components/Genres";
 import { Container } from "./styles";
+import TopBar from "../../components/TopBar";
 
 export default function Home() {
 	const [albums, setAlbums] = useState([]);
@@ -24,6 +25,7 @@ export default function Home() {
 
 	return (
 		<Container>
+			<TopBar></TopBar>
 			{Object.entries(genres).map((genre, index) => {
 				return (
 					<Genres genre={genre} key={index}></Genres>

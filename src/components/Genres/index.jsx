@@ -8,7 +8,7 @@ export default function Genres(genres) {
 
 	return (
 		<Genre>
-			<h1>{name}</h1>
+			<h2>{name}</h2>
 			<AlbumsCards album={albums}></AlbumsCards>
 		</Genre>
 	);

@@ -38,24 +38,23 @@ const Albums = styled.div`
     overflow: auto;
 
     ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+      width: 6px;
+      height: 8px;
     }
 
     ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    -webkit-border-radius: 10px;
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-    border-radius: 10px;
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+      -webkit-border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      border-radius: 10px;
     }
 
     ::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background:#71a5de; 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
-
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      background:#71a5de; 
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+      box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     }
 `;
 

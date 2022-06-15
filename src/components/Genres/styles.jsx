@@ -9,7 +9,7 @@ const Genre = styled.div`
 
 	margin-bottom: 30px;
 
-	h1 {
+	h2 {
 		font-size: 2.5rem;
 		font-weight: bold;
 		margin-bottom: 30px;
