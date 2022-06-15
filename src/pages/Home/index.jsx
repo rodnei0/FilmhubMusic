@@ -5,9 +5,10 @@ import { organizeByGenre } from "../../utils/albumsUtils";
 import Genres from "../../components/Genres";
 import { Container } from "./styles";
 import TopBar from "../../components/TopBar";
+import useAlbums from "../../hook/useAlbums";
 
 export default function Home() {
-	const [albums, setAlbums] = useState([]);
+	const {albums, setAlbums} = useAlbums();
 
 	useEffect(() => {
 		async function getAlbums(){
@@ -19,7 +20,7 @@ export default function Home() {
 			}
 		}
 		getAlbums();
-	},[setAlbums]);
+	},[]);
 
 	const genres = organizeByGenre(albums);
 

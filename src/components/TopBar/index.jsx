@@ -1,13 +1,11 @@
-import { Header, Logo, Search, SearchBar} from "./styles";
+import { Header, Logo } from "./styles";
+import SearchBar from "../SearchBar";
 
 export default function TopBar() {
 	return (
 		<Header>
 			<Logo>Filmhub Music</Logo>
-			<SearchBar>
-				<Search placeholder="search"></Search>
-				<ion-icon name="search-outline"></ion-icon>
-			</SearchBar>
+			<SearchBar></SearchBar>
 		</Header>
 	);
 }

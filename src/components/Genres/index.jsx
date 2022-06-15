@@ -1,5 +1,5 @@
 import AlbumsCards from "../Albums";
-import { Genre } from "./styles";
+import { Genre } from "../Genres/styles";
 
 export default function Genres(genres) {
 	const { genre } = genres;

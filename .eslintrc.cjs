@@ -35,6 +35,7 @@ module.exports = {
 			"always"
 		],
 		"no-unused-vars": "off",
+		"react/prop-types": "off",
 	},
 	"globals": {
 		"React": "writable", 
