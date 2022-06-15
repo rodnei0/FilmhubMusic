@@ -1,3 +1,4 @@
+import React from "react";
 import AlbumsCards from "../Albums";
 import { Genre } from "../Genres/styles";
 

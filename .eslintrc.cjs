@@ -5,7 +5,8 @@ module.exports = {
 	},
 	"extends": [
 		"eslint:recommended",
-		"plugin:react/recommended"
+		"plugin:react/recommended",
+		"plugin:cypress/recommended"
 	],
 	"parserOptions": {
 		"ecmaFeatures": {
@@ -15,7 +16,8 @@ module.exports = {
 		"sourceType": "module"
 	},
 	"plugins": [
-		"react"
+		"react",
+		"cypress"
 	],
 	"rules": {
 		"indent": [
@@ -36,6 +38,8 @@ module.exports = {
 		],
 		"no-unused-vars": "off",
 		"react/prop-types": "off",
+		"react/jsx-uses-react": "off",
+		"react/react-in-jsx-scope": "off",
 	},
 	"globals": {
 		"React": "writable", 

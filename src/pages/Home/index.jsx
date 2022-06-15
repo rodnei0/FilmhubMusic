@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
-import styled from "styled-components";
+import React from "react";
+import { useEffect } from "react";
 import api from "../../services/api";
-import { organizeByGenre } from "../../utils/albumsUtils";
 import Genres from "../../components/Genres";
+import { organizeByGenre } from "../../utils/albumsUtils";
 import { Container } from "./styles";
 import TopBar from "../../components/TopBar";
 import useAlbums from "../../hook/useAlbums";
+import { Loading } from "../../components/Loading";
 
 export default function Home() {
 	const {albums, setAlbums} = useAlbums();
@@ -27,7 +28,7 @@ export default function Home() {
 	return (
 		<Container>
 			<TopBar></TopBar>
-			{Object.entries(genres).map((genre, index) => {
+			{albums.length === 0 ? <Loading /> : Object.entries(genres).map((genre, index) => {
 				return (
 					<Genres genre={genre} key={index}></Genres>
 				);

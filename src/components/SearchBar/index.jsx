@@ -1,15 +1,15 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import useAlbums from "../../hook/useAlbums";
 import api from "../../services/api";
 import { Container, Search } from "./styles";
 
 export default function SearchBar() {
+	const {setAlbums} = useAlbums();
 	const [search, setSearch] = useState("");
-	const {albums, setAlbums} = useAlbums();
 	const [auxiliar, setAuxiliar] = useState([]);
 
 	useEffect(() => {
-		console.log("entrei rsss");
 		async function getAlbums(){
 			try {
 				const result = await api.getAlbums();

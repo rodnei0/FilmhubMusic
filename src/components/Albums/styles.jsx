@@ -6,27 +6,52 @@ const Card = styled.div`
     gap: 10px;
     padding: 3px;
 
-    height: auto;
+	height: auto;
     min-width: 175px;
     width: 175px;
 
 h3 {
-   font-size: 1.20rem;
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
 }
 
 h4 {
-   font-size: 1rem;
-   margin-bottom: 10px;
+	font-size: 1.20rem;
+	margin-bottom: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: center;
 }
 
 img {
-   max-width: 175px;
-   height: auto;
-   border-radius: 50%;
+	max-width: 150px;
+	min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+	height: auto;
+	border-radius: 50%;
 }
 
 :hover {
    color: #71a5de;
+
+   & h3 {
+		font-size: 1rem;
+		white-space: normal;
+		overflow: hidden;
+		text-overflow: initial;
+	}
+
+	& h4 {
+		font-size: 1.20rem;
+		white-space: normal;
+		overflow: hidden;
+		text-overflow: initial;
+	}
 }
 `;
 

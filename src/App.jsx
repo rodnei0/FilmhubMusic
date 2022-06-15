@@ -1,3 +1,4 @@
+import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { AlbumsProvider } from "./contexts/AlbumsContext";
 import Home from "./pages/Home";
